@@ -2,7 +2,7 @@
 process=[]
 total=0
 t_time=0
-total=raw_input("Enter total number of processes:")
+total=input("Enter total number of processes:")
 for i in range(int(total)):
 	process.append([])
 	process[i].append(raw_input("Enter processes name:"))
@@ -13,7 +13,7 @@ for i in range(int(total)):
 process.sort(key=lambda process:process[1])
 
 for i in range(int(total)):
-	print process[i][0],'\t',process[i][1],'\t',process[i][2]
+	print(process[i][0],'\t',process[i][1],'\t',process[i][2])
 	
-print "Total: ", t_time
+print ("Total: ", t_time)
 
